@@ -1,0 +1,59 @@
+@use 'var';
+
+.main {
+  width: 100%;
+  height: 773px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  .mainContent {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .mainContent h1 {
+    font-family: var.$title-font;
+    color: var.$title-color;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+  }
+
+  .mainContent p {
+    font-family: var.$text-font;
+    color: var.$text-color;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .mainBtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .Btn {
+      color: var.$second-color;
+      font-size: 60px;
+      cursor: pointer;
+    }
+
+    .BtnAdd {
+      font-size: 12px;
+      font-family: var.$title-font;
+      font-weight: 500;
+      color: var.$title-color;
+    }
+  }
+}
